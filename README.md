@@ -1,0 +1,2 @@
+# Afina
+Private data manager
