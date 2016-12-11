@@ -3,8 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{FA941D84-2E49-43D3-BDCC-8287B7DCF132}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Brainstorming", "Brainstorming", "{76FE9F43-34A3-4457-9C66-D194DD91967C}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Brainstorming\MCD-Basic.txt = Documentation\Brainstorming\MCD-Basic.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76FE9F43-34A3-4457-9C66-D194DD91967C} = {FA941D84-2E49-43D3-BDCC-8287B7DCF132}
 	EndGlobalSection
 EndGlobal
