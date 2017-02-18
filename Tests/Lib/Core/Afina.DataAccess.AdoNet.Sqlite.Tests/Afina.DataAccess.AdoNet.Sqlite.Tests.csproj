@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>    
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\DataFiles\**" />
+    <EmbeddedResource Remove="Resources\DataFiles\**" />
+    <None Remove="Resources\DataFiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170125-04" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.10-rc2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.0.8-rc2" />
+    <PackageReference Include="SimpleInjector" Version="3.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet.Sqlite\Afina.DataAccess.AdoNet.Sqlite.csproj" />
+    <ProjectReference Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Afina.DataAccess.AdoNet.csproj" />
+    <ProjectReference Include="..\Afina.DataAccess.AdoNet.Tests\Afina.DataAccess.AdoNet.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\Data\Queries\Master\Queries.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Data\Queries\Sqlite\Queries-Sqlite.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

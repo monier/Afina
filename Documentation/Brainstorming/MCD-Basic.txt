@@ -1,7 +1,6 @@
 -------------------------------------
 User
 -------------------------------------
-Id
 UserName
 PublicKey
 PrivateKey
@@ -12,25 +11,22 @@ Salt
 -------------------------------------
 AsymetricAlgorithm
 -------------------------------------
-Id
 Name
 
 -------------------------------------
 SymetricAlgorithm
 -------------------------------------
-Id
 Name
 
 -------------------------------------
 Application
 -------------------------------------
-Id
+Name
 AsymetricAlgorithmId
 SymetricAlgorithmId
 
 -------------------------------------
 UserAuthentication
 -------------------------------------
-Id
-UserId
+UserName
 ApplicationId
