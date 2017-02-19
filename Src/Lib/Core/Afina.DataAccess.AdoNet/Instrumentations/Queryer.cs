@@ -36,7 +36,7 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
             actionOnParameter?.Invoke(parameter);
             return parameter;
         }
-        public T GetReaderValue<T>(IDataReader reader, string name)
+        public T ReadValue<T>(IDataReader reader, string name)
         {
             return (T)reader[name];
         }

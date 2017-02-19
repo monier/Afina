@@ -31,12 +31,12 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         /// <returns>parameter to pass to an instance of <see cref="DbCommand"/> that executes a query</returns>
         DbParameter CreateParameter(DbCommand command, string name, object value, Action<DbParameter> actionOnParameter = null);
         /// <summary>
-        /// Gets value from a <see cref="IDataReader"/>
+        /// Reads value from a <see cref="IDataReader"/>
         /// </summary>
         /// <typeparam name="T">type of the value</typeparam>
         /// <param name="reader">instance of <see cref="IDataReader"/></param>
         /// <param name="name">name of the field containing the value</param>
         /// <returns>value from the <see cref="IDataReader"/></returns>
-        T GetReaderValue<T>(IDataReader reader, string name);
+        T ReadValue<T>(IDataReader reader, string name);
     }
 }

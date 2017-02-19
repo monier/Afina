@@ -1,6 +1,6 @@
 ﻿using Afina.Models;
 
-namespace Afina.DataAccess
+namespace Afina.DataAccess.Repositories
 {
     /// <summary>
     /// Repository to user

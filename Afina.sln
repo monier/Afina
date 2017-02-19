@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.DataAccess.AdoNet.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.DataAccess.AdoNet.Sqlite.Tests", "Tests\Lib\Core\Afina.DataAccess.AdoNet.Sqlite.Tests\Afina.DataAccess.AdoNet.Sqlite.Tests.csproj", "{48C9D9CF-CF52-43C8-B08E-F65D56A034F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.Tests", "Tests\Lib\Core\Afina.Tests\Afina.Tests.csproj", "{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -106,6 +108,18 @@ Global
 		{48C9D9CF-CF52-43C8-B08E-F65D56A034F0}.Release|x64.Build.0 = Release|x64
 		{48C9D9CF-CF52-43C8-B08E-F65D56A034F0}.Release|x86.ActiveCfg = Release|x86
 		{48C9D9CF-CF52-43C8-B08E-F65D56A034F0}.Release|x86.Build.0 = Release|x86
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Debug|x64.ActiveCfg = Debug|x64
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Debug|x64.Build.0 = Debug|x64
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Debug|x86.ActiveCfg = Debug|x86
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Debug|x86.Build.0 = Debug|x86
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Release|x64.ActiveCfg = Release|x64
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Release|x64.Build.0 = Release|x64
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Release|x86.ActiveCfg = Release|x86
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,5 +137,6 @@ Global
 		{7E3348B2-FBA6-4137-9BAB-D37DF7E192F0} = {29C30530-28D6-4489-984A-609A98F48F44}
 		{F12976C7-C1F5-4F85-AC85-F8BE30DB70DB} = {7557A4F7-90B6-416E-8D2B-AF4219A0DDBE}
 		{48C9D9CF-CF52-43C8-B08E-F65D56A034F0} = {7557A4F7-90B6-416E-8D2B-AF4219A0DDBE}
+		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D} = {7557A4F7-90B6-416E-8D2B-AF4219A0DDBE}
 	EndGlobalSection
 EndGlobal

@@ -11,9 +11,4 @@
     <PackageReference Include="SimpleInjector" Version="3.3.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Afina.DataAccess.AdoNet.csproj" />
-    <ProjectReference Include="..\Afina.Tests\Afina.Tests.csproj" />
-  </ItemGroup>
-
 </Project>

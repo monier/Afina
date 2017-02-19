@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Queries>
   <Query name="GetAllUsers">
-    <![CDATA[SELECT Id, Name, Password FROM Users]]>
+    <![CDATA[SELECT Id, Name, Password FROM User]]>
   </Query>
   <Query name="GetUserByName">
-    <![CDATA[SELECT Id, Name, Password FROM Users WHERE Name = @name]]>
+    <![CDATA[SELECT Id, Name, Password FROM User WHERE Name = @name]]>
   </Query>
 </Queries>

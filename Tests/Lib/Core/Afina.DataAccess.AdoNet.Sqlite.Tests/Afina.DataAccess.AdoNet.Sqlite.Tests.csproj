@@ -28,6 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Resources\Data\Db\afina.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\Data\Queries\Master\Queries.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

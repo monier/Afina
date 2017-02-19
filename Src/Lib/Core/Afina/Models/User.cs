@@ -10,7 +10,7 @@ namespace Afina.Models
         /// <summary>
         /// User's unique id
         /// </summary>
-        public int Id { get; set; }
+        public long Id { get; set; }
         /// <summary>
         /// User's name
         /// </summary>
