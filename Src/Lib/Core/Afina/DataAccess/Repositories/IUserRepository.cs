@@ -3,7 +3,7 @@
 namespace Afina.DataAccess.Repositories
 {
     /// <summary>
-    /// Repository to user
+    /// Repository for user
     /// </summary>
     public interface IUserRepository
     {
