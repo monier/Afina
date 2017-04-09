@@ -3,8 +3,8 @@
 namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Repositories
 {
     [TestClass]
-    [TestCategory("Afina.AdoNet.Sqlite.UserRepository")]
-    public class UserRepositoryTests : AdoNet.Tests.Repositories.UserRepositoryTests
+    [TestCategory("Afina.AdoNet.Sqlite.DevelopperRepository")]
+    public class DevelopperRepositoryTests : AdoNet.Tests.Repositories.DevelopperRepositoryTests
     {
         public override void ConfigureContainer()
         {
@@ -12,9 +12,9 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Repositories
             RepositoryHelper.ConfigureContainer(_container);
         }
         [TestMethod]
-        public override void GetUser()
+        public override void CreateDeveloppers()
         {
-            base.GetUser();
+            base.CreateDeveloppers();
         }
     }
 }

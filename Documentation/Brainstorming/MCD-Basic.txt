@@ -9,21 +9,27 @@ SymetricAlgorithmId
 Salt
 
 -------------------------------------
-AsymetricAlgorithm
+AsymmetricAlgorithm
 -------------------------------------
+Id
 Name
 
 -------------------------------------
-SymetricAlgorithm
+SymmetricAlgorithm
 -------------------------------------
+Id
 Name
 
 -------------------------------------
 Application
 -------------------------------------
+Id
 Name
-AsymetricAlgorithmId
-SymetricAlgorithmId
+ExternalId
+AsymmetricAlgorithmId
+SymmetricAlgorithmId
+PublicKey
+PrivateKey
 
 -------------------------------------
 UserAuthentication

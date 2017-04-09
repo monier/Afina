@@ -4,16 +4,10 @@ using Afina.Models;
 
 namespace Afina.DataAccess.AdoNet.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : RepositoryBase, IUserRepository
     {
-        private readonly IQueryExecutor _queryExecutor;
-        private readonly IEntityMapHolder _entityMapHolder;
-
-        public UserRepository(IQueryExecutor queryExecutor, IEntityMapHolder entityMapHolder)
+        public UserRepository(IQueryExecutor queryExecutor, IEntityMapHolder entityMapHolder) : base(queryExecutor, entityMapHolder)
         {
-            _queryExecutor = queryExecutor;
-            _entityMapHolder = entityMapHolder;
-
             _entityMapHolder.Register<User>((user, result) =>
             {
                 user.Id = result.ReadValue<long>("Id");

@@ -28,6 +28,14 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
             actionOnCommand(command);
             return command.ExecuteReader();
         }
+        public int ExecuteNonQuery(DbConnection connection, Action<DbCommand> actionOnCommand)
+        {
+            using (var command = connection.CreateCommand())
+            {
+                actionOnCommand(command);
+                return command.ExecuteNonQuery();
+            }
+        }
         public DbParameter CreateParameter(DbCommand command, string name, object value, Action<DbParameter> actionOnParameter = null)
         {
             var parameter = command.CreateParameter();
@@ -39,6 +47,10 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         public T ReadValue<T>(IDataReader reader, string name)
         {
             return (T)reader[name];
+        }
+        public object ReadValue(IDataReader reader, int index)
+        {
+            return reader.GetValue(index);
         }
     }
 }

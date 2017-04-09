@@ -38,7 +38,7 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         {
             if (_queries.TryGetValue(name, out string query))
                 return query;
-            return null;
+            throw new QueryNotFoundException($"The query {name} is not found!");
         }
     }
 }

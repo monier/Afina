@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace Afina.DataAccess.AdoNet.Instrumentations
 {
@@ -24,5 +25,12 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         /// </summary>
         /// <param name="stream">stream containing queries</param>
         void AddQueries(Stream stream);
+    }
+    /// <summary>
+    /// Exception raised when a query is not found
+    /// </summary>
+    public class QueryNotFoundException : Exception
+    {
+        public QueryNotFoundException(string message) : base(message) { }
     }
 }

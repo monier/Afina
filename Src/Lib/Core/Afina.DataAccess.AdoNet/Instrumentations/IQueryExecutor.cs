@@ -12,5 +12,12 @@
         /// <param name="parameters">parameters to pass to the query</param>
         /// <returns>result of the query in a <see cref="IDataReader"/></returns>
         QueryResult Execute(string queryName, params QueryParameter[] parameters);
+        /// <summary>
+        /// Executes a query and return the affected rows count
+        /// </summary>
+        /// <param name="queryName">query name that can be retrieved by an instance of <see cref="IQuerySelector"/></param>
+        /// <param name="parameters">parameters to pass to the query</param>
+        /// <returns>affected rows count</returns>
+        int ExecuteNonQuery(string queryName, params QueryParameter[] parameters);
     }
 }

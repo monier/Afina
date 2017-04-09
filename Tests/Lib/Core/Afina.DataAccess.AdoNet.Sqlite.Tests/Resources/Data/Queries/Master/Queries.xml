@@ -6,4 +6,32 @@
   <Query name="GetUserByName">
     <![CDATA[SELECT Id, Name, Password FROM User WHERE Name = @name]]>
   </Query>
+  <Query name="InsertApplication">
+    <![CDATA[INSERT INTO Application 
+    (ExternalId, Name, PrivateKey, PublicKey) 
+    VALUES (@externalId, @name, @privateKey, @publicKey)]]>
+  </Query>
+  <Query name="GetAllApplications">
+    <![CDATA[SELECT Id, ExternalId, Name, PrivateKey, PublicKey FROM Application]]>
+  </Query>
+  <Query name="GetApplicationByExternalId">
+    <![CDATA[SELECT Id, ExternalId, Name, PrivateKey, PublicKey FROM Application Where ExternalId = @externalId]]>
+  </Query>
+  <Query name="GetApplicationById">
+    <![CDATA[SELECT Id, ExternalId, Name, PrivateKey, PublicKey FROM Application Where Id = @id]]>
+  </Query>
+  <Query name="InsertDevelopper">
+    <![CDATA[INSERT INTO Developper
+    (ExternalId, Name)
+    VALUES (@externalId, @name)]]>
+  </Query>
+  <Query name="GetAllDeveloppers">
+    <![CDATA[SELECT Id, ExternalId, Name FROM Developper]]>
+  </Query>
+  <Query name="GetDevelopperByExternalId">
+    <![CDATA[SELECT Id, ExternalId, Name FROM Developper Where ExternalId = @externalId]]>
+  </Query>
+  <Query name="GetDevelopperById">
+    <![CDATA[SELECT Id, ExternalId, Name FROM Developper Where Id = @id]]>
+  </Query>
 </Queries>

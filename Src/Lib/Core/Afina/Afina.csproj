@@ -11,4 +11,9 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Business\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

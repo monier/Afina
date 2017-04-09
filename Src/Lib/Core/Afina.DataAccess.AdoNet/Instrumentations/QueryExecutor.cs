@@ -28,5 +28,24 @@
             });
             return new QueryResult(_queryer, reader, connection);
         }
+
+        public int ExecuteNonQuery(string queryName, params QueryParameter[] parameters)
+        {
+            using (var connection = _queryer.OpenNewConnection())
+            {
+                return _queryer.ExecuteNonQuery(connection, (command) =>
+                {
+                    command.CommandType = System.Data.CommandType.Text;
+                    command.CommandText = _querySelector.GetQuery(queryName);
+                    if (parameters != null)
+                    {
+                        foreach (var parameter in parameters)
+                        {
+                            command.Parameters.Add(_queryer.CreateParameter(command, parameter.Name, parameter.Value, parameter.ActionOnParameter));
+                        }
+                    }
+                });
+            }
+        }
     }
 }

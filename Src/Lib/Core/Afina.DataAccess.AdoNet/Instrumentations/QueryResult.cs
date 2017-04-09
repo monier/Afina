@@ -40,6 +40,15 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         {
             return _queryer.ReadValue<T>(DataReader, name);
         }
+        /// <summary>
+        /// Reads value from result set
+        /// </summary>
+        /// <param name="index">index of the value</param>
+        /// <returns>value from the result set</returns>
+        public object ReadValue(int index)
+        {
+            return _queryer.ReadValue(DataReader, index);
+        }
         public void Dispose()
         {
             DataReader?.Dispose();

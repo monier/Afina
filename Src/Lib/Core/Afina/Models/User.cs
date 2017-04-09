@@ -3,7 +3,7 @@
 namespace Afina.Models
 {
     /// <summary>
-    /// Represents an user in the system
+    /// Represents an user in the server
     /// </summary>
     public class User
     {

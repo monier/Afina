@@ -22,6 +22,13 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         /// <returns>instance of <see cref="IDataReader"/> containing the query result</returns>
         IDataReader ExecuteReader(DbConnection connection, Action<DbCommand> actionOnCommand);
         /// <summary>
+        /// Executes a query and return the affected rows count
+        /// </summary>
+        /// <param name="connection">connection to database</param>
+        /// <param name="actionOnCommand">method to invoke on <see cref="DbCommand"/> object</param>
+        /// <returns>affected rows count</returns>
+        int ExecuteNonQuery(DbConnection connection, Action<DbCommand> actionOnCommand);
+        /// <summary>
         /// Creates a parameter to pass to the instance of <see cref="DbCommand"/> that executes a query
         /// </summary>
         /// <param name="command">command that executes the query</param>
@@ -38,5 +45,12 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         /// <param name="name">name of the field containing the value</param>
         /// <returns>value from the <see cref="IDataReader"/></returns>
         T ReadValue<T>(IDataReader reader, string name);
+        /// <summary>
+        /// Reads value from a <see cref="IDataReader"/>
+        /// </summary>
+        /// <param name="reader">instance of <see cref="IDataReader"/></param>
+        /// <param name="index">index of the field containing the value</param>
+        /// <returns></returns>
+        object ReadValue(IDataReader reader, int index);
     }
 }
