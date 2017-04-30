@@ -12,12 +12,12 @@ namespace Afina.DataAccess.AdoNet.Tests.Instrumentations
         {
             _container.Register<IQuerySelector, QuerySelector>(Lifestyle.Singleton);
         }
-        public virtual void SelectQueryFromFiles(params string[] files)
+        public virtual void SelectQueryFromDirectory(params string[] directories)
         {
             var querySelector = _container.GetInstance<IQuerySelector>();
-            foreach (var file in files)
+            foreach (var directory in directories)
             {
-                querySelector.AddQueries(file);
+                querySelector.AddQueriesFromDirectory(directory);
             }
             string query = querySelector.GetQuery("GetUserByName");
             Log(query);

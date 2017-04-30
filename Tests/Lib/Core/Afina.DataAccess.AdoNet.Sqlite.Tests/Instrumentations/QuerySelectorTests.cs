@@ -10,10 +10,10 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Instrumentations
     public class QuerySelectorTests: AdoNet.Tests.Instrumentations.QuerySelectorTests
     {
         [TestMethod]
-        public void SelectQueryFromFiles()
+        public void SelectQueryFromDirectory()
         {
-            string master = Path.Combine(AppContext.BaseDirectory, @"Resources\Data\Queries\Master\Queries.xml");
-            base.SelectQueryFromFiles(master);
+            string directory = Path.Combine(AppContext.BaseDirectory, @"Resources\Data\Queries\");
+            base.SelectQueryFromDirectory(directory);
         }
         [TestMethod]
         public void SelectUnexistingQuery()

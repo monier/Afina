@@ -6,13 +6,23 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
 {
     public class QuerySelector : IQuerySelector
     {
+        private const string Extension = ".xml";
         private readonly Dictionary<string, string> _queries;
 
         public QuerySelector()
         {
             _queries = new Dictionary<string, string>();
         }
-        public void AddQueries(string filename)
+
+        public void AddQueriesFromDirectory(string directory)
+        {
+            var files = Directory.GetFiles(directory, $"*{Extension}", SearchOption.AllDirectories);
+            foreach(var file in files)
+            {
+                AddQueriesFromFile(file);
+            }
+        }
+        public void AddQueriesFromFile(string filename)
         {
             using (FileStream file = new FileStream(filename, FileMode.Open))
             {

@@ -5,6 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Resources\Data\Queries\Master\Application.xml" Link="Resources\Data\Queries\Master\Application.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Resources\Data\Queries\Master\Developper.xml" Link="Resources\Data\Queries\Master\Developper.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Resources\Data\Queries\Master\Session.xml" Link="Resources\Data\Queries\Master\Session.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Resources\Data\Queries\Master\User.xml" Link="Resources\Data\Queries\Master\User.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170125-04" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.1.10-rc2" />
     <PackageReference Include="MSTest.TestFramework" Version="1.0.8-rc2" />
@@ -19,6 +34,17 @@
 
   <ItemGroup>
     <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Data\Db\" />
+    <Folder Include="Resources\Data\Queries\Master\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Databases\Sqlite\afina.db" Link="Resources\Data\Db\afina.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

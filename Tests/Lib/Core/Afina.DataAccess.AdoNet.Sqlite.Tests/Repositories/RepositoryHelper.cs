@@ -1,7 +1,9 @@
 ﻿using Afina.DataAccess.AdoNet.Instrumentations;
 using Afina.DataAccess.AdoNet.Sqlite.Infrastructures;
 using SimpleInjector;
+using System;
 using System.Data.Common;
+using System.IO;
 
 namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Repositories
 {

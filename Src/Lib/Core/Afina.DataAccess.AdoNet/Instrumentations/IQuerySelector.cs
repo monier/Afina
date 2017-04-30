@@ -18,7 +18,12 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         /// Adds queries to current selector from xml file.
         /// </summary>
         /// <param name="filename">xml file containing queries</param>
-        void AddQueries(string filename);
+        void AddQueriesFromFile(string filename);
+        /// <summary>
+        /// Adds all xml files queries found in specified directory and its subdirectories to current selector
+        /// </summary>
+        /// <param name="directory">directory containing xml files</param>
+        void AddQueriesFromDirectory(string directory);
         /// <summary>
         /// Adds queries to current selector from xml stream.
         /// <para>Existing queries will be updated/changed.</para>

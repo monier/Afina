@@ -21,8 +21,7 @@ namespace Afina.DataAccess.AdoNet.Tests.Repositories
         {
             base.Initialize();
             var querySelector = _container.GetInstance<IQuerySelector>();
-            querySelector.AddQueries(Path.Combine(AppContext.BaseDirectory, @"Resources\Data\Queries\Master\Queries.xml"));
-            querySelector.AddQueries(Path.Combine(AppContext.BaseDirectory, @"Resources\Data\Queries\Sqlite\Queries-Sqlite.xml"));
+            querySelector.AddQueriesFromDirectory(Path.Combine(AppContext.BaseDirectory, @"Resources\Data\Queries\"));
         }
     }
 }
