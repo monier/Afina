@@ -36,7 +36,7 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
                 return command.ExecuteNonQuery();
             }
         }
-        public DbParameter CreateParameter(DbCommand command, string name, object value, Action<DbParameter> actionOnParameter = null)
+        public virtual DbParameter CreateParameter(DbCommand command, string name, object value, Action<DbParameter> actionOnParameter = null)
         {
             var parameter = command.CreateParameter();
             parameter.ParameterName = name;
@@ -44,11 +44,11 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
             actionOnParameter?.Invoke(parameter);
             return parameter;
         }
-        public T ReadValue<T>(IDataReader reader, string name)
+        public virtual T ReadValue<T>(IDataReader reader, string name)
         {
             return (T)reader[name];
         }
-        public object ReadValue(IDataReader reader, int index)
+        public virtual object ReadValue(IDataReader reader, int index)
         {
             return reader.GetValue(index);
         }

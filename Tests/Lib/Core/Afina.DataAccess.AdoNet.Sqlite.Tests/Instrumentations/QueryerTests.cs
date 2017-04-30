@@ -71,7 +71,7 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Instrumentations
                         Log($"Counter: {counter}");
                     }
                 }
-                Assert.IsTrue(counter > 0, "Specifi user found from db");
+                Assert.IsTrue(counter > 0, "Specific user found from db");
                 connection.Close();
             }
         }

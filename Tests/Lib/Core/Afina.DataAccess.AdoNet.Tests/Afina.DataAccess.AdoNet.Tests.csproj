@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet.Sqlite\Afina.DataAccess.AdoNet.Sqlite.csproj" />
     <ProjectReference Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Afina.DataAccess.AdoNet.csproj" />
     <ProjectReference Include="..\Afina.Tests\Afina.Tests.csproj" />
   </ItemGroup>

@@ -16,6 +16,7 @@ namespace Afina.Tests
         public virtual void Setup()
         {
             _container = new Container();
+            _container.Options.AllowOverridingRegistrations = true;
             ConfigureContainer();
             Initialize();
         }

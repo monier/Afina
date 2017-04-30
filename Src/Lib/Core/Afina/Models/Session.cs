@@ -10,7 +10,7 @@ namespace Afina.Models
         /// <summary>
         /// Internal session unique id
         /// </summary>
-        public int Id { get; set; }
+        public long Id { get; set; }
         /// <summary>
         /// Session's unique id that is exposed to third parties
         /// </summary>

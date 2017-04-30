@@ -13,6 +13,7 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Repositories
             container.Register<DbProviderFactory, SqliteDbProviderFactory>(Lifestyle.Singleton);
             container.RegisterInitializer<IConnectionStringProvider>(service => service.ConnectionString = connectionString);
             container.Register<IEntityMapHolder, EntityMapHolder>(Lifestyle.Singleton);
+            container.Register<IQueryer, SqliteQueryer>(Lifestyle.Transient);
             container.Verify(VerificationOption.VerifyAndDiagnose);
         }
     }
