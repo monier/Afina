@@ -19,4 +19,13 @@
     <PackageReference Include="System.Data.Common" Version="4.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Resources\Data\Queries\Master\Queries.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Data\Queries\Sqlite\Queries-Sqlite.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

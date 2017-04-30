@@ -38,6 +38,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.DataAccess.AdoNet.Sql
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.Tests", "Tests\Lib\Core\Afina.Tests\Afina.Tests.csproj", "{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{6BA5CF0D-855D-4C6D-B15F-2F6C8620AC3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sqlite", "Sqlite", "{4459218A-1581-4E57-8E52-4DE93C993D83}"
+	ProjectSection(SolutionItems) = preProject
+		Databases\Sqlite\afina.db = Databases\Sqlite\afina.db
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,5 +145,6 @@ Global
 		{F12976C7-C1F5-4F85-AC85-F8BE30DB70DB} = {7557A4F7-90B6-416E-8D2B-AF4219A0DDBE}
 		{48C9D9CF-CF52-43C8-B08E-F65D56A034F0} = {7557A4F7-90B6-416E-8D2B-AF4219A0DDBE}
 		{36AC8D55-8AC8-4936-9E4C-CDC4F482777D} = {7557A4F7-90B6-416E-8D2B-AF4219A0DDBE}
+		{4459218A-1581-4E57-8E52-4DE93C993D83} = {6BA5CF0D-855D-4C6D-B15F-2F6C8620AC3E}
 	EndGlobalSection
 EndGlobal
