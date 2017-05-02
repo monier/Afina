@@ -12,7 +12,7 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Instrumentations
         [TestMethod]
         public void SelectQueryFromDirectory()
         {
-            string directory = Path.Combine(AppContext.BaseDirectory, @"Resources\Data\Queries\");
+            string directory = Path.Combine(AppContext.BaseDirectory, @"Resources/Data/Queries/");
             base.SelectQueryFromDirectory(directory);
         }
         [TestMethod]

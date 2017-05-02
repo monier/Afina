@@ -5,17 +5,14 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
 {
     public class ConnectionStringProvider : IConnectionStringProvider
     {
-        public string ConnectionString { get; set; }
-        private readonly Func<DbConnectionStringBuilder> _connectionStringBuilderFactory;
-        public ConnectionStringProvider(Func<DbConnectionStringBuilder> connectionStringBuilderFactory)
+        private string _connectionString = null;
+        public void SetConnectionString(string connectionString)
         {
-            _connectionStringBuilderFactory = connectionStringBuilderFactory;
+            _connectionString = connectionString;
         }
-        public DbConnectionStringBuilder GetConnectionStringBuilder()
+        public string GetConnectionString()
         {
-            var builder = _connectionStringBuilderFactory();
-            builder.ConnectionString = ConnectionString;
-            return builder;
+            return _connectionString;
         }
     }
 }

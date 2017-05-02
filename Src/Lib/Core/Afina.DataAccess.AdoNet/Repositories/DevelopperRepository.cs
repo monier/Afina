@@ -62,5 +62,9 @@ namespace Afina.DataAccess.AdoNet.Repositories
             }
             return developper;
         }
+        public void DeleteDevelopperById(long id)
+        {
+            _queryExecutor.ExecuteNonQuery("DeleteDevelopperById", new QueryParameter("id", id));
+        }
     }
 }

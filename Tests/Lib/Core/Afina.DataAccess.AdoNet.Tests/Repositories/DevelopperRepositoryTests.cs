@@ -31,8 +31,12 @@ namespace Afina.DataAccess.AdoNet.Tests.Repositories
                 developper = CreateNewDevelopper(i.ToString());
                 developperRepository.StoreDevelopper(developper);
             }
-            var applications = developperRepository.GetDeveloppers();
-            Assert.IsTrue(applications.Count > 1, "All developpers are successfully retrieved");
+            var developpers = developperRepository.GetDeveloppers();
+            Assert.IsTrue(developpers.Count > 1, "All developpers are successfully retrieved");
+            foreach (var dev in developpers)
+                developperRepository.DeleteDevelopperById(dev.Id);
+            developpers = developperRepository.GetDeveloppers();
+            Assert.IsTrue(developpers.Count == 0, "All developpers are succesfully deleted");
         }
 
         private Developper CreateNewDevelopper(string suffix)

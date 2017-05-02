@@ -30,5 +30,10 @@ namespace Afina.DataAccess.Repositories
         /// <param name="id">developper's internal id</param>
         /// <returns>developper data</returns>
         Developper GetDevelopperById(long id);
+        /// <summary>
+        /// Deletes developper by his id
+        /// </summary>
+        /// <param name="id">developper id</param>
+        void DeleteDevelopperById(long id);
     }
 }

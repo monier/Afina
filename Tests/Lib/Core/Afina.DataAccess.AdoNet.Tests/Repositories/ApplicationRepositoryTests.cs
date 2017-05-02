@@ -33,6 +33,10 @@ namespace Afina.DataAccess.AdoNet.Tests.Repositories
             }
             var applications = applicationRepository.GetApplications();
             Assert.IsTrue(applications.Count > 1, "All applications are successfully retrieved");
+            foreach (var app in applications)
+                applicationRepository.DeleteApplicationById(app.Id);
+            applications = applicationRepository.GetApplications();
+            Assert.IsTrue(applications.Count == 0, "All applications are succesfully deleted");
         }
 
         private Application CreateNewApplication(string suffix)

@@ -6,22 +6,21 @@
     public interface IDatabase
     {
         /// <summary>
+        /// Initialise l'accès à la base de données
+        /// </summary>
+        void Initialize();
+        /// <summary>
         /// Returns the database version number
         /// </summary>
         /// <returns>database version number</returns>
         DatabaseVersion GetVersion();
         /// <summary>
-        /// Checks if the database exists
-        /// </summary>
-        /// <returns>true if the database exists</returns>
-        bool Exists();
-        /// <summary>
         /// Creates the database structures and objects
         /// </summary>
-        void Create();
+        void CreateOrUpdate();
         /// <summary>
         /// Updates the database structures and objects
         /// </summary>
-        void Update();
+        void Upgrade();
     }
 }

@@ -6,7 +6,7 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Infrastructures
     /// <summary>
     /// Implements the <see cref="DbProviderFactory"/> for Sqlite
     /// </summary>
-    public class SqliteDbProviderFactory: DbProviderFactory
+    public class SqliteDbProviderFactory : DbProviderFactory
     {
         public override DbCommand CreateCommand()
         {

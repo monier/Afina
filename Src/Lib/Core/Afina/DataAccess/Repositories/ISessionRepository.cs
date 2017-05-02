@@ -30,5 +30,10 @@ namespace Afina.DataAccess.Repositories
         /// <param name="externalId">session external id</param>
         /// <returns>session data</returns>
         Session GetSessionByExternalId(string externalId);
+        /// <summary>
+        /// Deletes session by its id
+        /// </summary>
+        /// <param name="id">session id</param>
+        void DeleteSessionById(long id);
     }
 }

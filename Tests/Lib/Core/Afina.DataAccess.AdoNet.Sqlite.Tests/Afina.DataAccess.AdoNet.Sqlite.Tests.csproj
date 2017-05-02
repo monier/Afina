@@ -5,16 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Resources\Data\Queries\Master\Application.xml" Link="Resources\Data\Queries\Master\Application.xml">
+    <Content Include="..\..\..\..\Databases\Afina.Database\Queries\Application.xml" Link="Resources\Data\Queries\Master\Application.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Resources\Data\Queries\Master\Developper.xml" Link="Resources\Data\Queries\Master\Developper.xml">
+    <Content Include="..\..\..\..\Databases\Afina.Database\Queries\Developper.xml" Link="Resources\Data\Queries\Master\Developper.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Resources\Data\Queries\Master\Session.xml" Link="Resources\Data\Queries\Master\Session.xml">
+    <Content Include="..\..\..\..\Databases\Afina.Database\Queries\Session.xml" Link="Resources\Data\Queries\Master\Session.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\..\Src\Lib\Core\Afina.DataAccess.AdoNet\Resources\Data\Queries\Master\User.xml" Link="Resources\Data\Queries\Master\User.xml">
+    <Content Include="..\..\..\..\Databases\Afina.Database\Queries\User.xml" Link="Resources\Data\Queries\Master\User.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -39,10 +39,23 @@
   <ItemGroup>
     <Folder Include="Resources\Data\Db\" />
     <Folder Include="Resources\Data\Queries\Master\" />
+    <Folder Include="Resources\Data\Structures\Tables\" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\Databases\Sqlite\afina.db" Link="Resources\Data\Db\afina.db">
+    <None Include="..\..\..\..\Databases\Afina.Database.Sqlite\Db\afina.db" Link="Resources\Data\Db\afina.db">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\..\Databases\Afina.Database.Sqlite\Structures\Tables\Application.sql" Link="Resources\Data\Structures\Tables\Application.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\..\Databases\Afina.Database.Sqlite\Structures\Tables\Developper.sql" Link="Resources\Data\Structures\Tables\Developper.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\..\Databases\Afina.Database.Sqlite\Structures\Tables\Session.sql" Link="Resources\Data\Structures\Tables\Session.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\..\Databases\Afina.Database.Sqlite\Structures\Tables\User.sql" Link="Resources\Data\Structures\Tables\User.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

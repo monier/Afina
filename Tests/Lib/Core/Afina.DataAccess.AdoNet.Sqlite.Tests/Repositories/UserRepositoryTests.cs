@@ -12,9 +12,9 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Repositories
             RepositoryHelper.ConfigureContainer(_container);
         }
         [TestMethod]
-        public override void GetUser()
+        public override void CreateUsers()
         {
-            base.GetUser();
+            base.CreateUsers();
         }
     }
 }

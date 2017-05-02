@@ -14,4 +14,7 @@
   <Query name="GetSessionById">
     <![CDATA[SELECT Id, ExternalId, EncryptionKey, CreationDate, LastAccessDate, TimeToLiveInSeconds FROM Session Where Id = @id]]>
   </Query>
+  <Query name="DeleteSessionById">
+    <![CDATA[DELETE FROM Session WHERE Id = @id]]>
+  </Query>
 </Queries>

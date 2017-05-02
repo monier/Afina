@@ -33,6 +33,10 @@ namespace Afina.DataAccess.AdoNet.Tests.Repositories
             }
             var sessions = sessionRepository.GetSessions();
             Assert.IsTrue(sessions.Count > 1, "All sessions are successfully retrieved");
+            foreach (var sess in sessions)
+                sessionRepository.DeleteSessionById(sess.Id);
+            sessions = sessionRepository.GetSessions();
+            Assert.IsTrue(sessions.Count == 0, "All sessions are succesfully deleted");
         }
 
         private Session CreateNewSession(string suffix)

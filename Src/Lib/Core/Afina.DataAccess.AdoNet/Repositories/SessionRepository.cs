@@ -69,5 +69,9 @@ namespace Afina.DataAccess.AdoNet.Repositories
             }
             return session;
         }
+        public void DeleteSessionById(long id)
+        {
+            _queryExecutor.ExecuteNonQuery("DeleteSessionById", new QueryParameter("id", id));
+        }
     }
 }

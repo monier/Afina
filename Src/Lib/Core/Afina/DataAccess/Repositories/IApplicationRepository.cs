@@ -30,5 +30,10 @@ namespace Afina.DataAccess.Repositories
         /// <param name="id">application id</param>
         /// <returns>application data</returns>
         Application GetApplicationById(long id);
+        /// <summary>
+        /// Deletes application by its id
+        /// </summary>
+        /// <param name="id">application id</param>
+        void DeleteApplicationById(long id);
     }
 }

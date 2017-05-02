@@ -12,13 +12,14 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
     public interface IConnectionStringProvider
     {
         /// <summary>
-        /// Connection string
+        /// Sets connection string
         /// </summary>
-        string ConnectionString { get; set; }
+        /// <param name="connectionString">connection string</param>
+        void SetConnectionString(string connectionString);
         /// <summary>
-        /// Gets the <see cref="DbConnectionStringBuilder"/> instance that can parse the connection string
+        /// Gets connection string
         /// </summary>
-        /// <returns><see cref="DbConnectionStringBuilder"/> instance that can parse the connection string</returns>
-        DbConnectionStringBuilder GetConnectionStringBuilder();
+        /// <returns>connection string</returns>
+        string GetConnectionString();
     }
 }

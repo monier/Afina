@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queries>
+  <Query name="InsertUser">
+    <![CDATA[INSERT INTO User 
+    (Name, Password) 
+    VALUES (@name, @password)]]>
+  </Query>
+  <Query name="GetAllUsers">
+    <![CDATA[SELECT Id, Name, Password FROM User]]>
+  </Query>
+  <Query name="GetUserByName">
+    <![CDATA[SELECT Id, Name, Password FROM User WHERE Name = @name]]>
+  </Query>
+  <Query name="GetUserById">
+    <![CDATA[SELECT Id, Name, Password FROM User WHERE Id = @id]]>
+  </Query>
+  <Query name="DeleteUserById">
+    <![CDATA[DELETE FROM User WHERE Id = @id]]>
+  </Query>
+</Queries>

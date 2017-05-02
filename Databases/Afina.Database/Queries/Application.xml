@@ -14,4 +14,7 @@
   <Query name="GetApplicationById">
     <![CDATA[SELECT Id, ExternalId, Name, PrivateKey, PublicKey FROM Application Where Id = @id]]>
   </Query>
+  <Query name="DeleteApplicationById">
+    <![CDATA[DELETE FROM Application WHERE Id = @id]]>
+  </Query>
 </Queries>
