@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queries>
+  <Query name="InsertApplication">
+    <![CDATA[INSERT INTO Application 
+    (ExternalId, Name, PrivateKey, PublicKey) 
+    VALUES (@externalId, @name, @privateKey, @publicKey)]]>
+  </Query>
+  <Query name="GetAllApplications">
+    <![CDATA[SELECT Id, ExternalId, Name, PrivateKey, PublicKey FROM Application]]>
+  </Query>
+  <Query name="GetApplicationByExternalId">
+    <![CDATA[SELECT Id, ExternalId, Name, PrivateKey, PublicKey FROM Application Where ExternalId = @externalId]]>
+  </Query>
+  <Query name="GetApplicationById">
+    <![CDATA[SELECT Id, ExternalId, Name, PrivateKey, PublicKey FROM Application Where Id = @id]]>
+  </Query>
+  <Query name="DeleteApplicationById">
+    <![CDATA[DELETE FROM Application WHERE Id = @id]]>
+  </Query>
+</Queries>

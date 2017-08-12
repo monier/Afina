@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queries>
+  <Query name="InsertSession">
+    <![CDATA[INSERT INTO Session
+    (ExternalId, EncryptionKey, CreationDate, LastAccessDate, TimeToLiveInSeconds)
+    VALUES (@externalId, @encryptionKey, @creationDate, @lastAccessDate, @timeToLiveInSeconds)]]>
+  </Query>
+  <Query name="GetAllSessions">
+    <![CDATA[SELECT Id, ExternalId, EncryptionKey, CreationDate, LastAccessDate, TimeToLiveInSeconds FROM Session]]>
+  </Query>
+  <Query name="GetSessionByExternalId">
+    <![CDATA[SELECT Id, ExternalId, EncryptionKey, CreationDate, LastAccessDate, TimeToLiveInSeconds FROM Session Where ExternalId = @externalId]]>
+  </Query>
+  <Query name="GetSessionById">
+    <![CDATA[SELECT Id, ExternalId, EncryptionKey, CreationDate, LastAccessDate, TimeToLiveInSeconds FROM Session Where Id = @id]]>
+  </Query>
+  <Query name="DeleteSessionById">
+    <![CDATA[DELETE FROM Session WHERE Id = @id]]>
+  </Query>
+</Queries>

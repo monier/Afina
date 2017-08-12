@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queries>
+  <Query name="InsertDevelopper">
+    <![CDATA[INSERT INTO Developper
+    (ExternalId, Name)
+    VALUES (@externalId, @name)]]>
+  </Query>
+  <Query name="GetAllDeveloppers">
+    <![CDATA[SELECT Id, ExternalId, Name FROM Developper]]>
+  </Query>
+  <Query name="GetDevelopperByExternalId">
+    <![CDATA[SELECT Id, ExternalId, Name FROM Developper Where ExternalId = @externalId]]>
+  </Query>
+  <Query name="GetDevelopperById">
+    <![CDATA[SELECT Id, ExternalId, Name FROM Developper Where Id = @id]]>
+  </Query>
+  <Query name="DeleteDevelopperById">
+    <![CDATA[DELETE FROM Developper WHERE Id = @id]]>
+  </Query>
+</Queries>
