@@ -13,7 +13,7 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
         /// Opens new connection to database
         /// </summary>
         /// <returns>opened connection</returns>
-        DbConnection OpenNewConnection();
+        DbConnection GetConnection();
         /// <summary>
         /// Executes a query and return an instance of <see cref="IDataReader"/>
         /// </summary>

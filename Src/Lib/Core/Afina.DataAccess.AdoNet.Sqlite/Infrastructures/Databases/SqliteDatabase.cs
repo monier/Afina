@@ -37,7 +37,7 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Infrastructures.Databases
         public override void CreateOrUpdate()
         {
             var files = Directory.GetFiles(_dbStructureQueriesLocator.GetDirectoryLocation(), $"*{_dbStructureQueriesLocator.GetExtension()}", SearchOption.AllDirectories);
-            using (var connection = _queryer.OpenNewConnection())
+            using (var connection = _queryer.GetConnection())
             {
                 foreach (var file in files)
                 {

@@ -12,8 +12,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Business\" />
-    <Folder Include="Services\" />
+    <Compile Remove="Business\**" />
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="Business\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Business\**" />
+    <None Remove="Services\**" />
   </ItemGroup>
 
 </Project>

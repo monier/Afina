@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{FA941D84-2E49-43D3-BDCC-8287B7DCF132}"
 EndProject
@@ -30,17 +30,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Afina.DataAccess.AdoNet", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Afina.DataAccess.AdoNet.Sqlite", "Src\Lib\Core\Afina.DataAccess.AdoNet.Sqlite\Afina.DataAccess.AdoNet.Sqlite.csproj", "{7E3348B2-FBA6-4137-9BAB-D37DF7E192F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.DataAccess.AdoNet.Tests", "Tests\Lib\Core\Afina.DataAccess.AdoNet.Tests\Afina.DataAccess.AdoNet.Tests.csproj", "{F12976C7-C1F5-4F85-AC85-F8BE30DB70DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Afina.DataAccess.AdoNet.Tests", "Tests\Lib\Core\Afina.DataAccess.AdoNet.Tests\Afina.DataAccess.AdoNet.Tests.csproj", "{F12976C7-C1F5-4F85-AC85-F8BE30DB70DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.DataAccess.AdoNet.Sqlite.Tests", "Tests\Lib\Core\Afina.DataAccess.AdoNet.Sqlite.Tests\Afina.DataAccess.AdoNet.Sqlite.Tests.csproj", "{48C9D9CF-CF52-43C8-B08E-F65D56A034F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Afina.DataAccess.AdoNet.Sqlite.Tests", "Tests\Lib\Core\Afina.DataAccess.AdoNet.Sqlite.Tests\Afina.DataAccess.AdoNet.Sqlite.Tests.csproj", "{48C9D9CF-CF52-43C8-B08E-F65D56A034F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.Tests", "Tests\Lib\Core\Afina.Tests\Afina.Tests.csproj", "{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Afina.Tests", "Tests\Lib\Core\Afina.Tests\Afina.Tests.csproj", "{36AC8D55-8AC8-4936-9E4C-CDC4F482777D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{6BA5CF0D-855D-4C6D-B15F-2F6C8620AC3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.Database.Sqlite", "Databases\Afina.Database.Sqlite\Afina.Database.Sqlite.csproj", "{B9CC28EC-AC47-4DFF-A886-C2D400DEEFE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Afina.Database.Sqlite", "Databases\Afina.Database.Sqlite\Afina.Database.Sqlite.csproj", "{B9CC28EC-AC47-4DFF-A886-C2D400DEEFE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afina.Database", "Databases\Afina.Database\Afina.Database.csproj", "{29B294F3-1DC0-4293-A015-825306DF21AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Afina.Database", "Databases\Afina.Database\Afina.Database.csproj", "{29B294F3-1DC0-4293-A015-825306DF21AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

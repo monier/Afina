@@ -33,7 +33,7 @@ namespace Afina.DataAccess.AdoNet.Sqlite.Tests.Instrumentations
         public void SelectUsers()
         {
             var queryer = _container.GetInstance<IQueryer>();
-            using (var connection = queryer.OpenNewConnection())
+            using (var connection = queryer.GetConnection())
             {
                 queryer.ExecuteNonQuery(connection, command =>
                 {

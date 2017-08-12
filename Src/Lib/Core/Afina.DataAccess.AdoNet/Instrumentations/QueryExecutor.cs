@@ -13,7 +13,7 @@
 
         public QueryResult Execute(string queryName, params QueryParameter[] parameters)
         {
-            var connection = _queryer.OpenNewConnection();
+            var connection = _queryer.GetConnection();
             var reader = _queryer.ExecuteReader(connection, (command) =>
             {
                 command.CommandType = System.Data.CommandType.Text;
@@ -31,7 +31,7 @@
 
         public int ExecuteNonQuery(string queryName, params QueryParameter[] parameters)
         {
-            using (var connection = _queryer.OpenNewConnection())
+            using (var connection = _queryer.GetConnection())
             {
                 return _queryer.ExecuteNonQuery(connection, (command) =>
                 {

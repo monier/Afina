@@ -13,7 +13,7 @@ namespace Afina.DataAccess.AdoNet.Tests.Instrumentations
         public virtual void OpenConnection()
         {
             var queryer = _container.GetInstance<IQueryer>();
-            using (var connection = queryer.OpenNewConnection())
+            using (var connection = queryer.GetConnection())
             {
                 connection.Close();
             }

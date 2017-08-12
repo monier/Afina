@@ -15,7 +15,7 @@ namespace Afina.DataAccess.AdoNet.Instrumentations
             _providerFactory = providerFactory;
         }
 
-        public DbConnection OpenNewConnection()
+        public DbConnection GetConnection()
         {
             var connection = _providerFactory.CreateConnection();
             connection.ConnectionString = _connectionStringProvider.GetConnectionString();
